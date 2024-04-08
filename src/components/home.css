@@ -1,0 +1,640 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.OuterHomeContainer{
+    /* padding: 0px 3%; */
+    padding-top: 90px;
+    /* margin-top: 30px; */
+}
+.doctorSection{
+  width: 100%;
+  height: 80vh;
+  padding: 0px 3%;
+
+  /* background-color: aqua; */
+  display: flex;
+  
+}
+.leftDiv{
+    width: 33%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.leftDiv img{
+    position: relative;
+    bottom: 20px; 
+}
+.leftDiv p{
+    position: relative;
+    bottom: 30px;
+}
+.leftDiv button{
+    position: relative;
+    bottom: 50px;
+    width: 270px;
+    height: 50px;
+    background-color: #5284B5;
+    color: aliceblue;
+    border: none;
+    box-shadow: 2px 2px 3px black,-2px -2px 3px black;
+}
+
+.middleDiv{
+    width: 33%;
+    height: 100%;
+    /* border: 2px solid red; */
+    position: relative;
+}
+.middleDiv #docImage1{
+    position: absolute;
+    top: 5%;
+     
+}
+.middleDiv #docImage2{
+    position: absolute;
+    top: 64%;
+    left: 68%;
+}
+
+
+.rightDiv{
+    width: 33%;
+    height: 100%;
+    /* border: 2px solid green; */
+    padding-top:3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.rightDiv #arcImage{
+    margin-bottom: 12%; 
+}
+.rightDiv p{
+    color: gray;
+    position: absolute;
+    top: 90%;
+}
+
+.Jambotron{
+    width: 94%;
+    height: 50vh;
+    background-color: #5284B5;
+    display: flex;
+    justify-content: space-evenly;
+    color: aliceblue;
+    align-items: center;
+    border-radius: 2px;
+    margin: 3% 3%;
+}
+.commonBoldpara{
+    font-weight: bold;
+}
+
+.jamboDiv{
+    display: flex;
+    
+}
+.jamboleft{
+    position: relative;
+    margin-right: 23px;
+}
+
+#smallimg{
+    position: absolute;
+    top: 50px;
+    left: 25px;
+}
+.jamboright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.servicesSection{
+    width: 100%;
+    height: 70vh;
+    /* background-color: aqua; */
+    margin: 30px 0px;
+    padding: 0px 3%;
+
+}
+.upperSection{
+    width: 100%;
+    height: 30%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#para1{
+    font-weight: bold;
+}
+#para2{
+color: gray;
+}
+
+.lowerSection{
+    width: 100%;
+    height: 70%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.commonStyleDiv{
+    width: 23%;
+    height: 80%;
+    /* border: 2px solid red; */
+}
+.specialListSection{
+  width: 100%;
+  height: 95vh;
+  background-color: #5284B5;
+  padding: 3% 3%;
+
+}
+.specialListSection #myPara{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+}
+.topDiv{
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+.bottomDiv{
+    width: 100%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #E9F7F8;
+    margin-top: -25px;
+}
+.bottomDiv1{
+    width: 100%;
+    height: 200%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.bdiv{
+    width: 21%;
+    height: 100%;
+    border: 2px solid #6c9ac9;
+    position: relative;
+    padding: 0 2%;
+    top: 10px;
+
+}
+.bdiv img{
+  padding-top: 8px;  
+}
+
+.mySpan{
+    position: absolute;
+    top: 10px;
+    left: 90px;
+}
+.bottomDiv2{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid green; */
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+@media screen and (max-width:199px){
+    .doctorSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        justify-content: space-between;
+    }
+    .leftDiv p{
+        position: relative;
+        top: 20px;
+        bottom: 20px;
+    }
+    .leftDiv button{
+        position: relative;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        bottom: 20px;
+    }
+    .leftDiv img{
+        position: relative;
+        top: 10px; 
+    }
+    .middleDiv{
+        margin-top: 50px;
+        margin-bottom: 100px;
+        position: relative;
+    }
+    .middleDiv #docImage1{
+        position: absolute;
+        top: 5%;
+         
+    }
+    .middleDiv #docImage2{
+        position: absolute;
+        top: 30px;
+        left:65% ;
+    }
+    .rightDiv{
+        height: auto;
+        margin: 1px 0px;
+    }
+    .rightDiv #arcImage{
+        margin-bottom: 12%; 
+        width: 100px;
+    }
+    .rightDiv p{
+        color: gray;
+        position: absolute;
+        margin: 30px 0px;
+        margin-bottom: 70px;
+    }
+    .Jambotron{
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+
+    }
+    .upperSection{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .lowerSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: space-between;
+    }
+    .commonStyleDiv{
+        width: 200px;
+        margin-top: 20px;
+    }
+    .specialListSection{
+        margin-top: 500px;
+        height: auto;
+        padding-right: 150px;
+        
+    }   
+
+    .bdiv{
+        width: 270px;
+        padding: 30px;
+        margin-bottom: 10px; 
+        margin: 0% 14%;
+        position: relative;
+        top: 10px;
+        
+        margin-top: 30px;
+     }
+    
+     .bottomDiv1{
+         display: flex;
+         flex-direction: column;
+         margin-top: 50px;
+         position: relative;
+         
+     }
+     .bottomDiv img{
+         width:60px;
+         height: 60px;
+     }
+     .bottomDiv span{
+          padding-top: 40px;
+          padding-left: 10px;
+          
+     }
+     .bottomDiv2{
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 50px;
+ 
+     }
+     #myPara{
+         align-items: center;
+         padding-left: 40px;
+         position: relative;
+         top:30px
+     }
+    
+}
+
+
+
+
+@media screen and (min-width:200px) and (max-width:420px){
+    .doctorSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        justify-content: space-between;
+    }
+    .leftDiv p{
+        position: relative;
+        top: 20px;
+        bottom: 20px;
+    }
+    .leftDiv button{
+        position: relative;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        bottom: 20px;
+    }
+    .leftDiv img{
+        position: relative;
+        top: 10px; 
+    }
+    .middleDiv{
+        margin-top: 50px;
+        margin-bottom: 100px;
+        position: relative;
+    }
+    .middleDiv #docImage1{
+        position: absolute;
+        top: 5%;
+         
+    }
+    .middleDiv #docImage2{
+        position: absolute;
+        top: 80px;
+        left:65% ;
+    }
+    .rightDiv{
+        height: auto;
+        margin: 40px 0px;
+    }
+    .rightDiv #arcImage{
+        margin-bottom: 12%; 
+    }
+    .rightDiv p{
+        color: gray;
+        position: absolute;
+        margin: 30px 0px;
+        margin-bottom: 70px; 
+    }
+    .Jambotron{
+        margin-top: 40%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+
+    }
+    .upperSection{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .lowerSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: space-between;
+    }
+    .commonStyleDiv{
+        width: 200px;
+        margin-top: 20px;
+    }
+    .specialListSection{
+        margin-top: 500px;
+        height: auto;
+    }
+    .bdiv{
+       width: 270px;
+       padding: 30px;
+       margin-bottom: 10px; 
+       margin: 0% 14%;
+       position: relative;
+       top: 10px;
+       margin-top: 30px;
+    }
+   
+    .bottomDiv1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .bottomDiv img{
+        width:60px;
+        height: 60px;
+    }
+    .bottomDiv span{
+         padding-top: 40px;
+         padding-left: 10px;
+         
+    }
+    .bottomDiv2{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+
+    }
+    #myPara{
+        align-items: center;
+        padding-left: 40px;
+        position: relative;
+        top:30px
+    }
+    
+    
+}
+
+/* for tab */
+
+@media screen and (min-width:421px) and (max-width:800px) {
+     .rightDiv{
+        display: none;
+     }
+     .doctorSection{
+        width: 100%;
+        height: 60vh;
+        padding: 30px 5%;
+      
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-between;
+        
+      }
+      .leftDiv img{
+        position: relative;
+        top:20px;
+        bottom: 20px;
+        width: 300px;
+        height: 80px;
+      }
+      .leftDiv p {
+        position: relative;
+        top: 40px;
+      }
+      .leftDiv #mybtn{
+        position: relative;
+        top: 80px;
+        bottom: 100px;
+        height: 50px;
+        width: 220px;
+        padding: 20px 40px;
+      }
+
+      .middleDiv{
+        position: relative;
+      }
+      .middleDiv #docImage1{
+        position: absolute;
+        top: 10%;
+        width: 280px;
+         
+    }
+    .middleDiv #docImage2{
+        position: absolute;
+        top: 255px;
+        left:75% ;
+    }
+    .lowerSection{
+        height: auto;
+    }
+    .servicesSection{
+        position: relative;
+        top: 200px;
+
+    }
+    #myPara{
+        padding: 30px 0px;
+        font-size: 2rem;
+    }
+    .specialListSection{
+        /* margin-bottom: 500px; */
+       position: relative;
+       /* bottom: 200px; */
+       height: auto;
+       top: 60px;
+        
+    }
+    .Jambotron{
+        position: relative;
+        top: 180px;
+    }
+    .jamboleft{
+        padding-left: 15px;
+    }
+
+    #bdiv4{
+        display: none;
+    }
+    #bdiv8{
+        display: none;
+    }
+    .bdiv{
+        width: 200px;
+        padding: 20px;
+    }
+    #smallimg{
+        padding-left: 10px;
+    }
+    .bottomDiv div{
+        padding-bottom: 50px;
+    }
+
+      
+}
+@media screen and (min-width:801px) and (max-width:992px) {
+    .rightDiv{
+        display: none;
+     }
+     .doctorSection{
+        width: 100%;
+        height: 60vh;
+        padding: 30px 5%;
+      
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-between;
+        
+      }
+      .leftDiv #mybtn{
+        position: relative;
+        top: 2px;
+        bottom: 100px;
+        height: 50px;
+        width: 220px;
+        padding: 20px 40px;
+      }
+
+      .middleDiv{
+        position: relative;
+      }
+      .middleDiv #docImage1{
+        position: absolute;
+        top: 10%;
+        width: 280px;
+         
+    }
+    #smallimg{
+        padding-left: 10px;
+    }
+    .middleDiv #docImage2{
+        position: absolute;
+        top: 255px;
+        left:75% ;
+    }
+      .jamboleft{
+        padding-left: 15px;
+        
+    }
+    .servicesSection{
+        height: auto;
+        margin-bottom: 100px;
+
+    }
+    .lowerSection{
+        position: relative;
+        top: 30px;
+        bottom: 30px;
+    }
+
+    #bdiv4{
+        display: none;
+    }
+    #bdiv8{
+        display: none;
+    }
+    .bdiv{
+        width: 200px;
+        height: 250px;
+    }
+     
+}

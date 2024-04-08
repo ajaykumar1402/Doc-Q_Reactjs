@@ -1,0 +1,27 @@
+@media (max-width: 576px) {
+  .messageInputdiv {
+    width: 100%;
+    .w-10{
+        width: 4rem;
+    }
+    .h-10{
+        height: 2.1rem;
+    }
+  }
+  .message-textinput {
+    width: 70%;
+  }
+  .gap-4 {
+    gap: 0px;
+  }
+  .submit-arrow-button {
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+      .message-textinput {
+        width: 100%;
+      }
+      .gap-4 {
+        gap: 0px;
+      }
+}
