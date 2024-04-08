@@ -15,14 +15,14 @@ const DoctorProfile = () => {
 
   return (
     <div className=" flex justify-center items-center bg-[#F7FAFF] overflow-hidden">
-      <div className="flex justify-center items-center w-11/12 flex-wrap gap-8 lg:flex-nowrap">
+      <div className="flex justify-center items-center w-11/12 flex-wrap gap-8 lg:flex-nowrap pt-16 mb-10">
       
       {/* parent container */}
 
 
         <div className="relative flex flex-col items-start justify-center gap-14 md:mt-10 lg:mt-1">
           {/* doctors container  */}
-          <div className=" w-[80rem] h-[80rem] bg-[#8abbf66c] rounded-full absolute right-[5rem]  z-[10]   md:right-[25rem] md:top-[-5rem]  lg:right-[47rem] lg:top-[-7rem]"></div>
+          <div className=" w-[80rem] h-[85rem] bg-[#8abbf66c] rounded-full absolute right-[5rem]  z-[10]   md:right-[25rem] md:top-[-5rem]  lg:right-[47rem] lg:top-[-7rem]"></div>
           <div className="flex justify-center items-center gap-32 relative z-[20] flex-wrap md:flex-nowrap">
             <div className="flex flex-col gap-1">
               <h1 className="text-4xl font-bold">Dr. Shawn Mandles</h1>
