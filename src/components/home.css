@@ -25,6 +25,10 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+.leftDiv h1{
+    font-size: 26px;
+    font-weight: bold;
+}
 .leftDiv img{
     position: relative;
     bottom: 20px; 
@@ -32,6 +36,8 @@
 .leftDiv p{
     position: relative;
     bottom: 30px;
+    color: #787878;
+
 }
 .leftDiv button{
     position: relative;
@@ -76,20 +82,28 @@
     margin-bottom: 12%; 
 }
 .rightDiv p{
-    color: gray;
+    font-size: 14px;
     position: absolute;
     top: 90%;
+    right: 130px;
+    color: #787878;
+}
+.rightDiv p span{
+    color: #5284B5;
+    font-size: 20px;
+    font-weight: bold;
+
 }
 
 .Jambotron{
     width: 94%;
-    height: 50vh;
+    height: 40vh;
     background-color: #5284B5;
     display: flex;
     justify-content: space-evenly;
     color: aliceblue;
     align-items: center;
-    border-radius: 2px;
+    border-radius: 5px;
     margin: 3% 3%;
 }
 .commonBoldpara{
@@ -115,6 +129,9 @@
     flex-direction: column;
     justify-content: center;
 }
+.paradesign{
+    color:#FFFFFF;
+}
 .servicesSection{
     width: 100%;
     height: 70vh;
@@ -133,6 +150,7 @@
 }
 #para1{
     font-weight: bold;
+    font-size: 24px;
 }
 #para2{
 color: gray;
@@ -153,7 +171,7 @@ color: gray;
 }
 .specialListSection{
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   background-color: #5284B5;
   padding: 3% 3%;
 
@@ -188,7 +206,7 @@ color: gray;
     /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
-    
+    margin-bottom: 15px;
 
 }
 .bdiv{
@@ -198,20 +216,40 @@ color: gray;
     position: relative;
     padding: 0 2%;
     top: 10px;
+    border-radius: 5px;
+    .mySpan{
+        font-size: 20px;
+    }
 
 }
 .bdiv img{
   padding-top: 8px;  
 }
 
+.bdiv p{
+    padding-top: 15px; 
+    text-align: left; 
+    color: #E9F7F8D9;
+
+  }
+  .topDiv #myPara{
+    font-size: 20px;
+    color: #E9F7F8;
+    padding-left: 32px;
+    padding-bottom: 14px;
+    
+  }
+
 .mySpan{
+    /* size: 20px; */
     position: absolute;
     top: 10px;
     left: 90px;
+    color: #E9F7F8;
 }
 .bottomDiv2{
     width: 100%;
-    height: auto;
+    height: 200%;
     /* border: 2px solid green; */
     position: relative;
     top: 10px;
@@ -229,23 +267,38 @@ color: gray;
         height: auto;
         justify-content: space-between;
     }
+   
+    .leftDiv h1{
+        width: 300px;
+        position: relative;
+        right: 60px;
+         
+    }
+   
     .leftDiv p{
+        width: 300px;
         position: relative;
         top: 20px;
         bottom: 20px;
+        right: 60px;
+
     }
     .leftDiv button{
         position: relative;
-        top: 30px;
+        top: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50px;
+        width: 250px;
         bottom: 20px;
+        right: 70px;
     }
     .leftDiv img{
         position: relative;
+        
         top: 10px; 
+        height: 30px;
+        width: 100%;
     }
     .middleDiv{
         margin-top: 50px;
@@ -349,9 +402,6 @@ color: gray;
     
 }
 
-
-
-
 @media screen and (min-width:200px) and (max-width:420px){
     .doctorSection{
         display: flex;
@@ -360,23 +410,38 @@ color: gray;
         height: auto;
         justify-content: space-between;
     }
+   
+    .leftDiv h1{
+        width: 300px;
+        position: relative;
+        right: 60px;
+         
+    }
+   
     .leftDiv p{
+        width: 300px;
         position: relative;
         top: 20px;
         bottom: 20px;
+        right: 60px;
+
     }
     .leftDiv button{
         position: relative;
-        top: 30px;
+        top: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100px;
+        width: 250px;
         bottom: 20px;
+        right: 70px;
     }
     .leftDiv img{
         position: relative;
+        
         top: 10px; 
+        height: 30px;
+        width: 100%;
     }
     .middleDiv{
         margin-top: 50px;
@@ -384,6 +449,8 @@ color: gray;
         position: relative;
     }
     .middleDiv #docImage1{
+        width: 100%;
+        height: auto;
         position: absolute;
         top: 5%;
          
@@ -394,6 +461,7 @@ color: gray;
         left:65% ;
     }
     .rightDiv{
+        width:100%;
         height: auto;
         margin: 40px 0px;
     }
@@ -403,22 +471,27 @@ color: gray;
     .rightDiv p{
         color: gray;
         position: absolute;
-        margin: 30px 0px;
+        margin: 40px -160px;
         margin-bottom: 70px; 
+        left: 220px;
     }
     .Jambotron{
-        margin-top: 40%;
+        margin-top: 20%;
         display: flex;
         flex-direction: column;
         height: auto;
         justify-content: space-between;
-
+        gap: 12px;
+        padding: 10px 0px;
     }
     .upperSection{
       display: flex;
       flex-direction: column;
       align-items: center;
 
+    }
+    #para2{
+        padding-left: 35px;
     }
     .lowerSection{
         display: flex;
@@ -431,23 +504,36 @@ color: gray;
         margin-top: 20px;
     }
     .specialListSection{
-        margin-top: 500px;
+        margin-top: 650px;
         height: auto;
     }
-    .bdiv{
+    .topDiv #myPara{
+        font-size: 30px;
+        color: #E9F7F8;
+        padding-left: 32px;
+        padding-bottom: 14px;
+        
+      }
+    .bdiv{ 
        width: 270px;
        padding: 30px;
        margin-bottom: 10px; 
-       margin: 0% 14%;
+       margin: 0% 10%; 
        position: relative;
        top: 10px;
        margin-top: 30px;
     }
+ 
+    .bdiv p span{
+        position: relative;
+       right: 10px;
+    }
+    
    
     .bottomDiv1{
         display: flex;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     .bottomDiv img{
         width:60px;
@@ -461,7 +547,10 @@ color: gray;
     .bottomDiv2{
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        position: relative;
+        top:-15px;
+
 
     }
     #myPara{
@@ -469,6 +558,11 @@ color: gray;
         padding-left: 40px;
         position: relative;
         top:30px
+    }
+    .servicesSection .lowerSection{
+        
+        margin: 100px 0px;
+    
     }
     
     
@@ -478,7 +572,7 @@ color: gray;
 
 @media screen and (min-width:421px) and (max-width:800px) {
      .rightDiv{
-        display: none;
+        display: none; 
      }
      .doctorSection{
         width: 100%;
@@ -492,21 +586,29 @@ color: gray;
       }
       .leftDiv img{
         position: relative;
-        top:20px;
+        top:40px;
         bottom: 20px;
+        width: 500px;
+        height: 100px;
+      }
+      .leftDiv h1 {
+        position: relative;
+        top: 40px;
         width: 300px;
-        height: 80px;
+       
       }
       .leftDiv p {
         position: relative;
         top: 40px;
+        width: 300px;
+         
       }
       .leftDiv #mybtn{
         position: relative;
         top: 80px;
         bottom: 100px;
         height: 50px;
-        width: 220px;
+        width: 280px;
         padding: 20px 40px;
       }
 
@@ -516,13 +618,14 @@ color: gray;
       .middleDiv #docImage1{
         position: absolute;
         top: 10%;
-        width: 280px;
+        width: 520px;
+
          
     }
     .middleDiv #docImage2{
         position: absolute;
-        top: 255px;
-        left:75% ;
+        top: 220px;
+        left:70% ;
     }
     .lowerSection{
         height: auto;
@@ -533,16 +636,31 @@ color: gray;
 
     }
     #myPara{
-        padding: 30px 0px;
-        font-size: 2rem;
+        /* padding: 10px 0px; */
+        
+        position: relative;
+        left: 30px;
+        top: 50px;
+        line-height: 3px;
+    }
+    .mySpan{  
+        position: relative;
+       top: -40px;
     }
     .specialListSection{
         /* margin-bottom: 500px; */
        position: relative;
        /* bottom: 200px; */
        height: auto;
-       top: 60px;
+       /* top: 60px; */
         
+    }
+    .specialListSection .bottomDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 130px;
+        /* border: 2px solid red; */
     }
     .Jambotron{
         position: relative;
@@ -552,21 +670,52 @@ color: gray;
         padding-left: 15px;
     }
 
-    #bdiv4{
+    .bottomDiv1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 2px solid red; */
+         
+        /* padding: 0px 30px; */
+    }
+
+    .bottomDiv2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* padding: 0px 30px; */
+        /* border: 2px solid red; */
+        position: relative;
+        top: -1px;
+    }
+
+    /* #bdiv4{
         display: none;
     }
     #bdiv8{
         display: none;
-    }
+    } */
     .bdiv{
-        width: 200px;
+        width: 300px;
         padding: 20px;
+        margin-bottom: 70px;
+        margin-left: 30px;
+        height: 300px;
+        align-content: center;
+        
+       
     }
     #smallimg{
         padding-left: 10px;
     }
+     
     .bottomDiv div{
         padding-bottom: 50px;
+        position: relative;
+        
+    }
+    .topDiv{
+        padding-top: 30px;
     }
 
       
