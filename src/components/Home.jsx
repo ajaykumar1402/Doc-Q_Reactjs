@@ -14,8 +14,8 @@ import Vector from '../assets/Vector.png';
 import pediatric_surgery from '../assets/pediatric_surgery.png';
 import opthalmology from '../assets/opthalmology.png';
 import orthopaedics from '../assets/orthopaedics.png';
- 
- 
+
+
 import output1 from '../assets/output1.png';
 import image22 from '../assets/image 22.png';
 import Group8 from '../assets/Group 8.png';
@@ -31,9 +31,11 @@ const Home = () => {
       {/* *****************Doctor Section Part 1**************** */}
       <div className="doctorSection">
         <div className="leftDiv">
-          <h1>Doc-Q – Where Your<br /> Time Matters as Much<br /> as Your Health</h1>
+          <h1 id="firstHeading">Doc-Q – Where Your<br /> Time Matters as Much<br /> as Your Health</h1>
+          {/* <h1 id="updatedHeading">Doc-Q – Where Your Time Matters as Much as Your Health</h1> */}
           <img src={output1} width="100%" />
-          <p>Break free from waiting for doctor appointments!<br /> Prioritizing your time with swift consultations,<br /> surgeries, and rapid medical services for a<br /> healthier, hassle-free experience."</p>
+          <p id="secondPara">Break free from waiting for doctor appointments!<br /> Prioritizing your time with swift consultations,<br /> surgeries, and rapid medical services for a<br /> healthier, hassle-free experience."</p>
+          {/* <p id="updatedPara">Break free from waiting for doctor appointments! Prioritizing your time with swift consultations,  surgeries, and rapid medical services for a  healthier, hassle-free experience."</p> */}
           <button id="mybtn">Book Appointment</button>
         </div>
         <div className="middleDiv">
@@ -43,7 +45,7 @@ const Home = () => {
         <div className="rightDiv">
           <img id="arcImage" src={Arc} width="25%" />
           <img id="outputImage" src={output2} width="100%" />
-          <p>“A trusted assistance companion for your<br /> health needs. ”</p>
+          <p><span>“</span>A trusted assistance companion for your health needs. <span>”</span></p>
         </div>
       </div>
 
@@ -52,11 +54,11 @@ const Home = () => {
         <div className="jamboDiv" id="jambo1">
           <div className="jamboleft">
             <img id="reactangle" src={Rectangle} />
-            <img id="smallimg" src={bx_time} />
+            <img id="smallimg" src={bx_time} /> 
           </div>
           <div className="jamboright">
             <p className='commonBoldpara'>24 hours services</p>
-            <p>lorem ipsum dolor sit<br /> amet,connector adicipafg</p>
+            <p className='paradesign'>lorem ipsum dolor sit<br /> amet,connector adicipafg</p>
           </div>
         </div>
 
@@ -67,7 +69,7 @@ const Home = () => {
           </div>
           <div className="jamboright">
             <p className='commonBoldpara'>Best reviews</p>
-            <p>lorem ipsum dolor sit<br /> amet,connector adicipafg</p>
+            <p className='paradesign'>lorem ipsum dolor sit<br /> amet,connector adicipafg</p>
           </div>
         </div>
 
@@ -78,7 +80,7 @@ const Home = () => {
           </div>
           <div className="jamboright">
             <p className='commonBoldpara'>High quality care</p>
-            <p>lorem ipsum dolor sit<br /> amet,connector adicipafg</p>
+            <p className='paradesign'>lorem ipsum dolor sit<br /> amet,connector adicipafg</p>
           </div>
         </div>
 
@@ -99,55 +101,56 @@ const Home = () => {
         </div>
       </div>
 
-      {/* *****************specialListSection Part 4**************** */}
+      {/* *****************specialListSection Part 4**************** */} 
       <div className="specialListSection">
         <div className="topDiv">
           <p id="myPara">Looking for a Specialist</p>
 
         </div>
-        <div className="bottomDiv">
+        <div className="bottomDiv" id="bottomDiv" >
           <div className="bottomDiv1">
             <div id="bdiv1" className="bdiv">
               <img src={neurology} width="40px" /> <span className="mySpan">Neurology</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold" }}>READ MORE</span></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold",fontSize:"15px" }}>READ MORE</span></p>
             </div>
             <div id="bdiv2" className="bdiv">
               <img src={blood_pressure} width="40px" /> <span className="mySpan">Neurology</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold" }}>READ MORE</span></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold",fontSize:"15px"  }}>READ MORE</span></p>
             </div>
             <div id="bdiv3" className="bdiv">
               <img src={surgical_sterilization} width="40px" /> <span className="mySpan">Neurology</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold" }}>READ MORE</span></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold",fontSize:"15px"  }}>READ MORE</span></p>
             </div>
             <div id="bdiv4" className="bdiv">
               <img src={Vector} width="40px" /> <span className="mySpan">Neurology</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold" }}>READ MORE</span></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold",fontSize:"15px"  }}>READ MORE</span></p>
             </div>
           </div>
           <div className="bottomDiv2">
             <div id="bdiv5" className="bdiv">
               <img src={Vector} width="40px" /> <span className="mySpan">Neurology</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold" }}>READ MORE</span></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold",fontSize:"15px"  }}>READ MORE</span></p>
             </div>
             <div id="bdiv6" className="bdiv">
               <img src={pediatric_surgery} width="40px" /> <span className="mySpan">Neurology</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold" }}>READ MORE</span></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold",fontSize:"15px"  }}>READ MORE</span></p>
             </div>
             <div id="bdiv7" className="bdiv">
               <img src={opthalmology} width="40px" /> <span className="mySpan">Neurology</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold" }}>READ MORE</span></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold",fontSize:"15px"  }}>READ MORE</span></p>
             </div>
             <div id="bdiv8" className="bdiv">
               <img src={orthopaedics} width="40px" /> <span className="mySpan">Neurology</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold" }}>READ MORE</span></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat hic odit officia sunt! Hic alias odit mollitia....<br /> <span style={{ fontWeight: "bold",fontSize:"15px"  }}>READ MORE</span></p>
             </div>
           </div>
         </div>
       </div>
 
-    <TopSpecialist/>
-    <Testimonials/>
-    <Footer/>
+
+      <TopSpecialist />
+      <Testimonials />
+      <Footer />
 
     </div>
   )
