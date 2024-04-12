@@ -53,7 +53,7 @@ function App() {
               <Route path="/patients" element={<Patients />} />
               <Route
                 path="/messages"
-                element={<div> Error in the code please update it ASAP </div>}
+                element={<div> Render messages here </div>}
               />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/settings" element={<Setting />} />
