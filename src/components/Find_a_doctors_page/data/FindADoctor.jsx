@@ -10,7 +10,7 @@ const FindADoctor = () => {
     <div >
 
     {/* <FindADoctor setSearchTerm={setSearchTerm} /> */}
-    <Navbar setSearchTerm={setSearchTerm}/>
+    {/* <Navbar setSearchTerm={setSearchTerm}/> */}
     <Doctordata searchTerm={searchTerm} />  
     </div>
     )

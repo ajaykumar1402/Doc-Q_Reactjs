@@ -150,7 +150,6 @@ const Home = () => {
 
       <TopSpecialist />
       <Testimonials />
-      <Footer />
 
     </div>
   )

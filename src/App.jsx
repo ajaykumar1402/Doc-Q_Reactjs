@@ -7,10 +7,6 @@ import Header from "./components/Header/Header";
 import Task from "./Pages/Task"
 import Dashboard from "./components/Desktop14/Dashboard/Dashboard";
 import Doctorprofile from "./components/Doctorprofile/Doctorprofile";
-import FindDoctor from "./components/Find_a_doctors_page/data/FindADoctor";
-import Services from "./components/Services";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar/Navbar"
 import Home from "./components/Home";
 import Analytics from "./components/Analytics/Analytics";
 import Patients from "./components/Patients/Patients";
@@ -18,11 +14,13 @@ import Setting from "./Pages/Settings";
 import Support from "./components/Support/Support";
 import Schedule from "./components/Schedule/Schedule";
 import Sidebar from "./components/Sidebar/Sidebar";
-
-
+import Footer from "./components/Footer";
+import Services from "./components/Services"
+import FindDoctor from "./components/Find_a_doctors_page/data/FindADoctor"
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-  const [isAdmin, setIsAdmin] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
 
 
   

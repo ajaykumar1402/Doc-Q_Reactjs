@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { data } from './data';
 import './doctor_data.css';
 
@@ -28,6 +29,17 @@ const FindADoctor = ({ searchTerm }) => {
     return stars;
   };
 
+
+  const navigate = useNavigate()
+
+  const handleRoute = ()=>{
+    navigate("/doctors-profile")
+  }
+
+
+
+
+
   return (
     <>
       <div className="doctors-main-container text-base px-24 py-12 pr-0 max-[880px]:pl-[40px]">
@@ -43,7 +55,7 @@ const FindADoctor = ({ searchTerm }) => {
             </div>
             <div className="doctor-list flex flex-col gap-5">
               {filteredDoctors.map((doctor, index) => (
-                <div key={index} className='single-doctor flex items-center content-between bg-[#CFE5FE] text-[#00305F] px-5 py-6'>
+                <div  onClick={handleRoute}  key={index} className='single-doctor flex items-center content-between bg-[#CFE5FE] text-[#00305F] px-5 py-6'>
                   <div className="doctor-img-container">
                     <img className=' rounded-full w-full h-full object-contain' src={doctor.img} alt="" />
                   </div>
