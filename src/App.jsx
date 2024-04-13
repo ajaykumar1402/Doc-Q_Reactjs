@@ -23,7 +23,7 @@ import Messages from "./components/Messages/Messages";
 function App() {
 
   
-  const [isAdmin, setIsAdmin] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(true);
 
 
   

@@ -92,7 +92,7 @@ function Frame53() {
                       </div>
                     </div>
                     <div className="h-8  rounded p-2 pl-8 w-40 bg-[#0000AC] text-xs text-[#FAFAFA]">
-                      Begin appointment
+                     <button className="cursor-pointer">Begin appointment</button> 
                     </div>
                   </div>
                 </div>
