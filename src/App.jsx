@@ -18,6 +18,7 @@ import Footer from "./components/Footer";
 import Services from "./components/Services"
 import FindDoctor from "./components/Find_a_doctors_page/data/FindADoctor"
 import Navbar from "./components/Navbar/Navbar";
+import Messages from "./components/Messages/Messages";
 
 function App() {
 
@@ -55,7 +56,7 @@ function App() {
               <Route path="/patients" element={<Patients />} />
               <Route
                 path="/messages"
-                element={<div> Render messages here </div>}
+                element={<Messages />}
               />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/settings" element={<Setting />} />
