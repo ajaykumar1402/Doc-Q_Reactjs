@@ -20,6 +20,8 @@ import FindDoctor from "./components/Find_a_doctors_page/data/FindADoctor"
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
+
+  
   const [isAdmin, setIsAdmin] = useState(false);
 
 

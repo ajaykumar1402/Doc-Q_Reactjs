@@ -44,7 +44,7 @@ const Navbar = () => {
                             key={i}
                             className={`text-lg font-bold cursor-pointer ${location.pathname === link.path
                                     ? "text-blue-500"
-                                    : "text-[#888787] line-through"
+                                    : "text-[#888787]"
                                 }`}
                         >
                             {link.title}
