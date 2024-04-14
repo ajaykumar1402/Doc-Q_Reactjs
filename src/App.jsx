@@ -21,12 +21,13 @@ import Navbar from "./components/Navbar/Navbar";
 import Messages from "./components/Messages/Messages";
 
 function App() {
+<<<<<<< HEAD
 
   
   const [isAdmin, setIsAdmin] = useState(false);
-
-
-  
+=======
+  const [isAdmin, setIsAdmin] = useState(true);
+>>>>>>> origin/main
 
   return (
     <>
@@ -48,7 +49,7 @@ function App() {
           <Header />
           <div className="flex justify-end">
             <Sidebar />
-            <Routes>
+            <Routes >
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/" element={<Navigate to="/dashboard" />} />
               <Route path="/schedule" element={<Schedule />} />
