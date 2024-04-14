@@ -91,9 +91,7 @@ function Frame53() {
                         <PiNotePencilBold className=" text-[#2F80ED]" />
                       </div>
                     </div>
-                    <div className="h-8  rounded p-2 pl-8 w-40 bg-[#0000AC] text-xs text-[#FAFAFA]">
-                     <button className="cursor-pointer">Begin appointment</button> 
-                    </div>
+                    <button className="cursor-pointer">Begin appointment</button> 
                   </div>
                 </div>
               </div>
