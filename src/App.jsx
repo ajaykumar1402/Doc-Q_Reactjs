@@ -9,7 +9,6 @@ import Dashboard from "./components/Desktop14/Dashboard/Dashboard";
 import Doctorprofile from "./components/Doctorprofile/Doctorprofile";
 import Home from "./components/Home";
 import Analytics from "./components/Analytics/Analytics";
-import Patients from "./components/Patients/Patients";
 import Setting from "./Pages/Settings";
 import Support from "./components/Support/Support";
 import Schedule from "./components/Schedule/Schedule";
@@ -19,15 +18,13 @@ import Services from "./components/Services"
 import FindDoctor from "./components/Find_a_doctors_page/data/FindADoctor"
 import Navbar from "./components/Navbar/Navbar";
 import Messages from "./components/Messages/Messages";
+import Patients from "./components/Patients/Patients";
 
 function App() {
-<<<<<<< HEAD
 
   
-  const [isAdmin, setIsAdmin] = useState(false);
-=======
   const [isAdmin, setIsAdmin] = useState(true);
->>>>>>> origin/main
+  // const [isAdmin, setIsAdmin] = useState(true);
 
   return (
     <>
@@ -54,7 +51,7 @@ function App() {
               <Route path="/" element={<Navigate to="/dashboard" />} />
               <Route path="/schedule" element={<Schedule />} />
               <Route path="/tasks" element={<Task />} />
-              <Route path="/patients" element={<Patients />} />
+              <Route path="/patients" element={<Patients/>} />
               <Route
                 path="/messages"
                 element={<Messages />}
