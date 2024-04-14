@@ -1,18 +1,45 @@
+import React, { useState } from 'react';
 import doctor from "../../assets/images/doctor_imgs/pngwing 4.png";
 import { FaCheckSquare, FaThumbsUp, FaStar, FaAngleDown } from "react-icons/fa";
+const timeSlots = [
+  { time: "10 - 11 AM" },
+  { time: "11 - 12 PM" },
+  { time: "12 - 01 PM" },
+  { time: "01 - 02 PM" },
+  { time: "02 - 03 PM" },
+  { time: "03 - 04 PM" },
+  { time: "04 - 05 PM" },
+  { time: "05 - 06 PM" },
+];
+
 
 const DoctorProfile = () => {
-  const timeStamps = [
-    { time: "10 - 11 AM" },
-    { time: "11 - 12 PM" },
-    { time: "12 - 01 PM" },
-    { time: "01 - 02 PM" },
-    { time: "02 - 03 PM" },
-    { time: "03 - 04 PM" },
-    { time: "04 - 05 PM" },
-    { time: "05 - 06 PM" },
-  ];
 
+
+  const [selectedSlot, setSelectedSlot] = useState(null);
+  const [bookedSlots, setBookedSlots] = useState([]);
+
+  const handleSlotClick = (index) => {
+    if (bookedSlots.includes(index)) {
+      alert('This slot is already booked!');
+    } else {
+      setSelectedSlot(index);
+    }
+  };
+
+  const handleBookClick = () => {
+    if (selectedSlot !== null) {
+      if (!bookedSlots.includes(selectedSlot)) {
+        alert('Booking successful!');
+        setBookedSlots([...bookedSlots, selectedSlot]);
+        setSelectedSlot(null); 
+      } else {
+        alert('This slot is already booked!');
+      }
+    } else {
+      alert('Please select a time slot before booking.');
+    }
+  };
   return (
     <div className=" flex justify-center items-center bg-[#F7FAFF] overflow-hidden">
       <div className="flex justify-center items-center w-11/12 flex-wrap gap-8 lg:flex-nowrap pt-16 mb-10">
@@ -23,7 +50,7 @@ const DoctorProfile = () => {
         <div className="relative flex flex-col items-start justify-center gap-14 md:mt-10 lg:mt-1">
           {/* doctors container  */}
           <div className=" w-[80rem] h-[85rem] bg-[#8abbf66c] rounded-full absolute right-[5rem]  z-[10]   md:right-[25rem] md:top-[-5rem]  lg:right-[47rem] lg:top-[-7rem]"></div>
-          <div className="flex justify-center items-center gap-32 relative z-[20] flex-wrap md:flex-nowrap">
+          <div className="flex justify-center items-center gap-8 sm:gap-32 relative z-[20] flex-wrap md:flex-nowrap">
             <div className="flex flex-col gap-1">
               <h1 className="text-4xl font-bold">Dr. Shawn Mandles</h1>
               <p className="text-xl">
@@ -82,7 +109,7 @@ const DoctorProfile = () => {
         <div className="  flex justify-center items-center lg:min-h-[90svh] lg:w-1/2 lg:border-l-2 lg:border-gray-400 ">
 
 
-          <div className="w-[400px] min-h-[500px] rounded-lg flex flex-col items-center gap-4  shadow-[0px_0px_5px_1px_#00000024] relative z-[20] md:w-[80%] mb-5 lg:w-[450px] ">
+          <div className="w-[400px] min-h-[500px] rounded-lg flex flex-col items-center gap-4   shadow-[0px_0px_5px_1px_#00000024] relative z-[20] md:w-[80%] mb-5 lg:w-[450px] ">
             <div>
               <h3 className="text-xl font-medium p-2 ">Pick a time slot</h3>
             </div>
@@ -127,18 +154,26 @@ const DoctorProfile = () => {
                 <p className="text-sm text-[#01A400]">25 slots available</p>
               </div>
             </div>
-            <div className="flex justify-center items-center  w-full">
-            <div className="flex flex-wrap gap-2 items-center justify-start p-8">
-              {timeStamps.map((time, i) => (
-                <div
-                  className="border-2 rounded-sm border-[#2F80ED] text-[#2F80ED]"
-                  key={i}
-                >
-                  <p className="py-2 px-3  ">{time.time}</p>
-                </div>
-              ))}
-            </div>
-            </div>
+           
+    <div className="flex flex-wrap gap-2 w-[312px] sm:w-auto sm:gap-8 my-2 lg:gap-2 items-center justify-center">
+      {timeSlots.map((slot, index) => (
+        <button
+          key={index}
+          className={`bg-[#fafafa] text-[#2F80ED] border-2 w-15 font-bold py-2 px-4 rounded  ${selectedSlot === index || selectedSlot === null ? 'opacity-100' : 'opacity-50'}`}
+          onClick={() => handleSlotClick(index)}
+        >
+          {slot.time}
+        </button>
+      ))}
+      <button 
+        onClick={handleBookClick}
+        className=" bg-[#fafafa] text-[#2F80ED] h-10 border-2 w-28 text-[#2F80ED] font-bold py-2 px-8 rounded"
+        disabled={selectedSlot === null}
+      >
+        Book
+      </button>
+    </div>
+
           </div>
         </div>
         {/* end of right sides container  */}
