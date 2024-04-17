@@ -1,4 +1,4 @@
-import sentIcon from "../icons/sentIcon.svg";
+// import sentIcon from "../icons/sentIcon.svg";
 
 
 const MessageReceived= ({

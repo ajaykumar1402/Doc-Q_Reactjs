@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import doctor from "../../assets/images/doctor_imgs/pngwing 4.png";
+import doctor from "../../../assets/images/doctor_imgs/pngwing 4.png";
 import { FaCheckSquare, FaThumbsUp, FaStar, FaAngleDown } from "react-icons/fa";
 const timeSlots = [
   { time: "10 - 11 AM" },

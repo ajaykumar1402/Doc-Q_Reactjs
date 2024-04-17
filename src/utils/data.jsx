@@ -1,3 +1,29 @@
+
+
+// Navigation Links for Navbar Landing Page 
+
+export const navbarLinks = [
+    {
+        title: "Home",
+        path: "/home",
+    },
+    {
+        title: "Our Services",
+        path: "/our-services",
+    },
+    {
+        title: "Find Doctor",
+        path: "/find-doctor",
+    },
+    {
+        title: "Login/Register",
+        path: "/login/register",
+    },
+];
+
+
+// Data for find a doctor
+
 export const data = [
     {
       img: 'src/assets/images/doctor_imgs/doctor1.png',

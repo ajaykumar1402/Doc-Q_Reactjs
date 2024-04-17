@@ -3,28 +3,28 @@ import React, { useState } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
 
-import Header from "./components/Header/Header";
-import Task from "./Pages/Task"
-import Dashboard from "./components/Desktop14/Dashboard/Dashboard";
-import Doctorprofile from "./components/Doctorprofile/Doctorprofile";
-import Home from "./components/Home";
-import Analytics from "./components/Analytics/Analytics";
-import Setting from "./Pages/Settings";
-import Support from "./components/Support/Support";
-import Schedule from "./components/Schedule/Schedule";
-import Sidebar from "./components/Sidebar/Sidebar";
-import Footer from "./components/Footer";
-import Services from "./components/Services"
-import FindDoctor from "./components/Find_a_doctors_page/data/FindADoctor"
-import Navbar from "./components/Navbar/Navbar";
-import Messages from "./components/Messages/Messages";
-import Patients from "./components/Patients/Patients";
+import Header from "./components/Common/HeaderDashboard/Header";
+import Task from "./components/DashboardPages/Task/Task"
+import Dashboard from "./components/DashboardPages/Desktop14/Dashboard/Dashboard";
+import Doctorprofile from "./components/LandingPages/Doctorprofile/Doctorprofile";
+import Home from "./Pages/Home/Home";
+import Analytics from "./components/DashboardPages/Analytics/Analytics";
+import Setting from "./components/DashboardPages/Setting/Settings";
+import Support from "./components/DashboardPages/Support/Support";
+import Schedule from "./components/DashboardPages/Schedule/Schedule";
+import Sidebar from "./components/Common/SidebarDashboard/Sidebar";
+import Footer from "./components/Common/Footer";
+import Services from "./components/LandingPages/Services/Services"
+import Messages from "./components/DashboardPages/Messages/Messages";
+import Patients from "./components/DashboardPages/Patients/Patients";
+import FindADoctor from "./components/LandingPages/Find_a_doctors_page/data/FindADoctor"
+import Navbar from "./components/Common/Navbar/Navbar"
 
 function App() {
 
   
   const [isAdmin, setIsAdmin] = useState(true);
-  // const [isAdmin, setIsAdmin] = useState(true);
+
 
   return (
     <>
@@ -35,7 +35,7 @@ function App() {
           <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/our services" element={<Services />} />
-            <Route path="/find-doctor" element={<FindDoctor />} />
+            <Route path="/find-doctor" element={<FindADoctor/>} />
             <Route path="/doctors-profile" element={<Doctorprofile />} />
           </Routes>
           <Footer />

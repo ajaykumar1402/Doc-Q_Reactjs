@@ -1,7 +1,7 @@
 import { MdOutlineMicNone } from "react-icons/md";
-import sentIcon from "../icons/sentIcon.svg";
+// import sentIcon from "../icons/sentIcon.svg";
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
-import hangUp from "../icons/hangUp.svg";
+// import hangUp from "../icons/hangUp.svg";
 import { PiPhoneDisconnect } from "react-icons/pi";
 
 const CallButtons = () => {

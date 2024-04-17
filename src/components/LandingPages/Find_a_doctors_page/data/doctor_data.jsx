@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { data } from './data';
+import { data } from '../../../../utils/data';
 import './doctor_data.css';
 
 const FindADoctor = ({ searchTerm }) => {

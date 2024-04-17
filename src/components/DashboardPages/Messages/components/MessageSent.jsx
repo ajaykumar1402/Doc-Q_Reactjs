@@ -1,4 +1,4 @@
-import sentIcon from "../icons/sentIcon.svg";
+import sentIcon from "../../../../assets/messages/icons/sentIcon.svg";
 
 
 const MessageSent= ({ message, time }) => {

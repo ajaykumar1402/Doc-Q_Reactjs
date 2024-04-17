@@ -1,29 +1,27 @@
 import './home.css'
-import bx_time from '../assets/bx_time.png';
-import iconoirHealthcare from '../assets/iconoirHealthcare.png';
-import Rectangle from '../assets/Rectangle.png';
-import Group from '../assets/Group.png';
-import Chamber from '../assets/Chamber.png';
-import CustomerCare from '../assets/CustomerCare.png';
-import onlineSpercialist from '../assets/onlineSpercialist.png';
-import Security from '../assets/Security.png';
-import neurology from '../assets/neurology.png';
-import blood_pressure from '../assets/blood_pressure.png';
-import surgical_sterilization from '../assets/surgical_sterilization.png';
-import Vector from '../assets/Vector.png';
-import pediatric_surgery from '../assets/pediatric_surgery.png';
-import opthalmology from '../assets/opthalmology.png';
-import orthopaedics from '../assets/orthopaedics.png';
+import bx_time from '../../assets/bx_time.png';
+import iconoirHealthcare from '../../assets/iconoirHealthcare.png';
+import Rectangle from '../../assets/Rectangle.png';
+import Group from '../../assets/Group.png';
+import Chamber from '../../assets/Chamber.png';
+import CustomerCare from '../../assets/CustomerCare.png';
+import onlineSpercialist from '../../assets/onlineSpercialist.png';
+import Security from '../../assets/Security.png';
+import neurology from '../../assets/neurology.png';
+import blood_pressure from '../../assets/blood_pressure.png';
+import surgical_sterilization from '../../assets/surgical_sterilization.png';
+import Vector from '../../assets/Vector.png';
+import pediatric_surgery from '../../assets/pediatric_surgery.png';
+import opthalmology from '../../assets/opthalmology.png';
+import orthopaedics from '../../assets/orthopaedics.png';
+import output1 from '../../assets/output1.png';
+import image22 from '../../assets/image 22.png';
+import Group8 from '../../assets/Group 8.png';
+import Arc from '../../assets/Arc.png';
+import output2 from '../../assets/output2.png';
+import TopSpecialist from '../../components/LandingPages/TopSpecialist/TopSpecialist';
+import Testimonials from '../../components/LandingPages/Testimonials/Testimonials';
 
-
-import output1 from '../assets/output1.png';
-import image22 from '../assets/image 22.png';
-import Group8 from '../assets/Group 8.png';
-import Arc from '../assets/Arc.png';
-import output2 from '../assets/output2.png';
-import TopSpecialist from './TopSpecialist/TopSpecialist';
-import Testimonials from './Testimonials/Testimonials';
-import Footer from './Footer';
 const Home = () => {
   return (
 

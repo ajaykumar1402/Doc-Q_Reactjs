@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import logo from "../../assets/images/doctor_imgs/Logo.png"
+import logo from "../../../assets/images/doctor_imgs/Logo.png"
 import { IoIosSearch } from "react-icons/io";
 import { IoMailOutline } from "react-icons/io5";
 import { IoNotificationsOutline } from "react-icons/io5";

@@ -1,9 +1,9 @@
 import "./Messages.css";
-import backArrow from "./icons/backarrow.svg";
-import ellipses from "./icons/ellipses.svg";
-import callerpic from "./images/callerpic.svg";
-import userpic from "./images/userpic.svg";
-import profilepic from "./images/profilepic.svg";
+import backArrow from "../../../assets/messages/icons/backarrow.svg";
+import ellipses from "../../../assets/messages/icons/ellipses.svg";
+import callerpic from "../../../assets/messages/images/callerpic.svg";
+import userpic from "../../../assets/messages/images/userpic.svg";
+import profilepic from "../../../assets/messages/images/profilepic.svg";
 import MessageSent from "./components/MessageSent";
 import MessageReceived from "./components/MessageReceived";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
@@ -19,6 +19,8 @@ const data = [
     time: "45 Mins Ago",
   },
 ];
+
+
 
 const Messages = () => {
   return (

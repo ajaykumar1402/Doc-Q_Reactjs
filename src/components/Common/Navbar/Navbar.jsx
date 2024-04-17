@@ -1,36 +1,17 @@
 import React,{useState} from "react";
 import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Logo from "../../assets/images/doctor_imgs/Logo.png"
+import Logo from "../../../assets/images/doctor_imgs/Logo.png"
+import {navbarLinks } from "../../../utils/data"
 
 
 
 const Navbar = () => {
     const location = useLocation();
 
-    // console.log(location)
-
     const [isOpen, setIsOpen] = useState(false)
 
-    const navbarLinks = [
-        {
-            title: "Home",
-            path: "/home",
-        },
-        {
-            title: "Our Services",
-            path: "/our-services",
-        },
-        {
-            title: "Find Doctor",
-            path: "/find-doctor",
-        },
-        {
-            title: "Login/Register",
-            path: "/login/register",
-        },
-    ];
-
+ 
     return (
         <nav className="w-full h-[12svh] sticky top-0 z-50 flex justify-center items-center bg-white">
             <div className="w-11/12 flex justify-between items-center relative">
