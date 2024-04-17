@@ -1,39 +1,45 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: Source Sans Pro;
 }
-.findDoctorMainContainer{
+ 
+.findDoctorMainContainer {
     padding-top: 13vh;
     /* border: 2px solid blue; */
     /* background-color: aliceblue; */
     width: 100%;
     height: 100%;
 }
-.firstDocDiv{
+
+.firstDocDiv {
     width: 100%;
     height: 85%;
     /* border: 2px solid black; */
     background: linear-gradient(191.78deg, #0B3258 5.33%, #5284B5 92.83%);
 
 }
-.inputContainer{
+
+.inputContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 28px;
     position: relative;
 }
-#serchforDoctor{
+
+#serchforDoctor {
     width: 300px;
 }
 
 
-#serchNearDoctor{
+#serchNearDoctor {
     width: 200px;
     margin-left: 5px;
 }
-.inputCommonDoctorClass{
+
+.inputCommonDoctorClass {
     height: 40px;
     background-color: #fff;
     border-radius: 10px;
@@ -41,76 +47,245 @@
     outline: none;
     /* box-shadow: 2px 2px 5px blue,-2px -2px 5px blue; */
 }
-#fullmoon{
+
+#fullmoon {
     width: 100px;
     position: absolute;
     left: 50px;
     top: 30px;
 }
-#moon{
+
+#moon {
     width: 125px;
     position: absolute;
     left: 0px;
-    top: 80px;   
+    top: 80px;
 }
-#treeImg{
+
+#treeImg {
     width: 740px;
-    
+    height: 370px;
     position: absolute;
-    top: 142px;
+    top: 140px;
     left: 0px;
-     
-   
+    z-index: 1;
+
+
 }
-#bluerect1{
+
+#bluerect1 {
     width: 450px;
     position: absolute;
     top: 100px;
     left: 280px;
     height: 20px;
+    align-items: center;
 }
-#bluerect2{
-    width: 240px; 
+
+#bluerect2 {
+    width: 240px;
     position: absolute;
-    top: 160px;
+    top: 155px;
     left: 380px;
     height: 20px;
-}
-#circle{
-    position: absolute;
- width: 400px;
- right: 3px;
- top: 73px;
- height: 400px;
- 
-
-}
-#avtar{
-    position: absolute;
-width: 100;
-height: 200px;
-top: 140px;
-right: 130px;
+    align-items: center;
 }
 
-.secondDocDiv{
+#circle {
+    position: absolute;
+    width: 400px;
+    right: 3px;
+    top: 79px;
+    height: 370px;
+
+
+}
+
+#avtar {
+    position: absolute;
+    width: 100;
+    height: 200px;
+    top: 140px;
+    right: 130px;
+}
+
+.secondDocDiv {
     width: 100%;
     height: 15%;
     background: #28328C;
-     align-content: center;
-    
+    align-content: center;
+
 }
-.bottombtnContainer{
- display: flex;
- justify-content: space-evenly;
- align-items: center;
+
+.bottombtnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.bottombtnContainer .btnn{
-    width: 170px;
+
+.bottombtnContainer .btnn {
+    width: 200px;
     height: 30px;
     border: 2px solid #FFFFFF80;
     background-color: #28328C;
     align-items: center;
     color: #fff;
     border-radius: 10px;
+
+}
+
+@media screen and (min-width:200px) and (max-width:420px) {
+    .inputCommonDoctorClass {
+        z-index: 1;
+    }
+
+    .inputContainer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    #serchforDoctor {
+        width: 260px;
+        height: 40px;
+    }
+
+    #serchNearDoctor {
+        width: 260px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    #circle {
+        display: none;
+    }
+
+    #avtar {
+        display: none;
+    }
+
+    .firstDocDiv {
+        position: relative;
+
+    }
+
+    #treeImg {
+        display: none;
+    }
+
+    #bluerect1 {
+        position: absolute;
+        top: 250px;
+        left: 10%;
+        height: 25px;
+        width: 80%;
+    }
+
+    #bluerect2 {
+        position: absolute;
+        top: 300px;
+
+        height: 25px;
+    }
+
+    .bottombtnContainer .btnn {
+        font-size: 11px;
+        width: 100px;
+        justify-content: space-evenly;
+    }
+
+    #bluerect2 {
+        position: relative;
+        top: 170px;
+        left: 10px;
+        height: 25px;
+    }
+}
+
+
+@media screen and (min-width:421px) and (max-width:992px) {
+
+    .inputContainer {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    #serchforDoctor {
+        width: 260px;
+        height: 50px;
+        margin-top: 2px;
+    }
+
+    #serchNearDoctor {
+        width: 260px;
+        height: 50px;
+        margin-top: 1px;
+    }
+
+
+
+    .firstDocDiv {
+        position: relative;
+
+    }
+
+    #treeImg {
+        position: absolute;
+        top: 200px;
+        z-index: 1;
+
+    }
+
+    #bluerect1 {
+        position: absolute;
+        top: 150px;
+        left: 15%;
+        height: 35px;
+        width: 70%;
+    }
+
+    #bluerect2 {
+        position: absolute;
+        top: 220px;
+        left: 25%;
+        height: 35px;
+        width: 50%;
+    }
+
+    .bottombtnContainer .btnn {
+        width: 220px;
+        height: 45px;
+        border: 2px solid #FFFFFF80;
+        background-color: #28328C;
+        align-items: center;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 20px;
+
+    }
+
+    #circle {
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        right: 3px;
+        top: 529px;
+
+
+
+    }
+
+    #avtar {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 580px;
+        right: 90px;
+    }
+
 }

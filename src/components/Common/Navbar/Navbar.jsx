@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Logo from "../../../assets/images/doctor_imgs/Logo.png"
@@ -7,8 +7,7 @@ import {navbarLinks } from "../../../utils/data"
 
 
 const Navbar = () => {
-    const location = useLocation();
-
+  const location = useLocation();
     const [isOpen, setIsOpen] = useState(false)
 
  
@@ -59,6 +58,8 @@ const Navbar = () => {
             </div>
         </nav>
     );
+
+
 };
 
 export default Navbar;

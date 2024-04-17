@@ -1,6 +1,6 @@
-
 import React, { useState } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
+
 
 
 import Header from "./components/Common/HeaderDashboard/Header";
@@ -26,16 +26,21 @@ function App() {
   const [isAdmin, setIsAdmin] = useState(true);
 
 
+
   return (
     <>
       {!isAdmin ? (
         <>
           <Navbar />
           <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
+            <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
+
             <Route path="/our services" element={<Services />} />
             <Route path="/find-doctor" element={<FindADoctor/>} />
+
+            <Route path="/our-services" element={<Services />} />
+            <Route path="/find-doctor" element={<FindDoctor />} />
             <Route path="/doctors-profile" element={<Doctorprofile />} />
           </Routes>
           <Footer />
@@ -46,16 +51,13 @@ function App() {
           <Header />
           <div className="flex justify-end">
             <Sidebar />
-            <Routes >
+            <Routes>
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/" element={<Navigate to="/dashboard" />} />
               <Route path="/schedule" element={<Schedule />} />
               <Route path="/tasks" element={<Task />} />
-              <Route path="/patients" element={<Patients/>} />
-              <Route
-                path="/messages"
-                element={<Messages />}
-              />
+              <Route path="/patients" element={<Patients />} />
+              <Route path="/messages" element={<Messages />} />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/settings" element={<Setting />} />
               <Route path="/support" element={<Support />} />
