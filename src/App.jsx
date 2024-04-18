@@ -17,6 +17,7 @@ import Patients from "./components/DashboardPages/Patients/Patients";
 import FindADoctor from "./components/LandingPages/Find_a_doctors_page/data/FindADoctor";
 import Navbar from "./components/Common/Navbar/Navbar";
 import Services from "./components/LandingPages/Services/Services";
+import FindDoctor from "./components/findDoctor";
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(!true);

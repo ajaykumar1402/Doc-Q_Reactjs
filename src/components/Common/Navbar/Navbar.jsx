@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Logo from "../../../assets/images/doctor_imgs/Logo.png";
+// import Logo from "../../../assets/images/doctor_imgs/Logo.png";
 import { navbarLinks } from "../../../utils/data";
 
 const Navbar = () => {
@@ -12,7 +12,11 @@ const Navbar = () => {
     <nav className="w-full h-[12svh] sticky top-0 z-50 flex justify-center items-center bg-white">
       <div className="w-11/12 flex justify-between items-center relative">
         <div className="w-[100px]">
-          <img src={Logo} alt="" className="object-cover w-full" />
+          <img
+            src="..\src\assets\images\doctor_imgs\logo.png"
+            alt=""
+            className="object-cover w-full"
+          />
         </div>
         <div className="hidden lg:flex lg:justify-center lg:items-center lg:gap-10">
           {navbarLinks.map((link, i) => (
