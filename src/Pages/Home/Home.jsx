@@ -22,6 +22,7 @@ import Arc from '../../assets/Arc.png';
 import output2 from '../../assets/output2.png';
 import TopSpecialist from '../../components/LandingPages/TopSpecialist/TopSpecialist';
 import Testimonials from '../../components/LandingPages/Testimonials/Testimonials';
+import Services from "../../components/LandingPages/Services/Services"
 
 
 const Home = () => {
