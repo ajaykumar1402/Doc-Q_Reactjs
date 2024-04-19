@@ -13,11 +13,11 @@ import Schedule from "./components/DashboardPages/Schedule/Schedule";
 import Sidebar from "./components/Common/SidebarDashboard/Sidebar";
 import Footer from "./components/Common/Footer";
 import Messages from "./components/DashboardPages/Messages/Messages";
-import Patients from "./components/DashboardPages/Patients/Patients";
 import FindADoctor from "./components/LandingPages/Find_a_doctors_page/data/FindADoctor";
 import Navbar from "./components/Common/Navbar/Navbar";
-import Services from "./components/LandingPages/Services/Services";
 import FindDoctor from "./components/findDoctor";
+import AddPatients from "./components/DashboardPages/AddPatients/AddPatients"
+import PatientsList from "./components/DashboardPages/PatientsList/PatientsList"
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(true);
@@ -52,8 +52,8 @@ function App() {
               <Route path="/" element={<Navigate to="/dashboard" />} />
               <Route path="/schedule" element={<Schedule />} />
               <Route path="/tasks" element={<Task />} />
-              {/* <Route path="/patients" element={<PatientsList />} /> */}
-              {/* <Route path="/add-patients" element={<AddPatients />} /> */}
+              <Route path="/patients-list" element={<PatientsList />} />
+              <Route path="/patients" element={<AddPatients />} />
               <Route path="/messages" element={<Messages />} />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/settings" element={<Setting />} />

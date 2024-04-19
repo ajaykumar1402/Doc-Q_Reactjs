@@ -1,8 +1,18 @@
 import React from "react";
 import { MdOutlineClear } from "react-icons/md";
 import { PiCalendarBlankBold } from "react-icons/pi";
+import { useNavigate } from "react-router-dom";
 
 const AddPatients = () => {
+  
+  const navigate = useNavigate()
+
+  const handleAddPatients = ()=>{
+     navigate("/patients-list")
+
+  }
+
+
   return (
     <div className="w-full mt-[8vh] px-5 md:mt-[5vh] lg:mt-[12vh] bg-[#FAFAFA] h-auto lg:h-full max-w-[80%] md:max-w-[90%] lg:max-w-[85%]">
       <div className="h-10  mb-5 w-full p-2 px-4 py-4 text-xs mb:text-xl">
@@ -14,7 +24,7 @@ const AddPatients = () => {
           <button className="border-[#0000AC] border-2 p-1 text-[10px] sm:text-sm sm:w-16  text-[#0000AC] rounded">
             Cancel
           </button>
-          <button className="border-[#0000AC] border p-1  text-[10px] sm:text-sm sm:w-16 rounded bg-[#0000AC] text-[#ffffff] px-2">
+          <button className="border-[#0000AC] border p-1  text-[10px] sm:text-sm sm:w-16 rounded bg-[#0000AC] text-[#ffffff] px-2" onClick={()=> handleAddPatients()}>
             Save
           </button>
         </div>
