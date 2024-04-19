@@ -8,7 +8,7 @@ const AddPatients = () => {
   const navigate = useNavigate()
 
   const handleAddPatients = ()=>{
-     navigate("/patients-list")
+     navigate("/patients")
 
   }
 
