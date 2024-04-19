@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import logo from "../../../assets/images/doctor_imgs/Logo.png"
+// import Logo from "../../../assets/images/doctor_imgs/Logo.png";
 import { IoIosSearch } from "react-icons/io";
 import { IoMailOutline } from "react-icons/io5";
 import { IoNotificationsOutline } from "react-icons/io5";
@@ -33,7 +33,7 @@ function Header() {
     <header className="mt-0 bg-white z-10 flex items-center justify-between gap-10 lg:gap-0 h-[8vh] md:h-[5vh] lg:h-[12vh] px-2 md:px-5 lg:px-10 fixed top-0 left-0 right-0 border border-b-slate-200">
       <Link to={"/"} className="w-[100px]">
         <img
-          src={logo}
+          src="..\src\assets\images\doctor_imgs\logo.png"
           alt="logo"
           className="cursor-pointer  object-cover w-full"
         />
