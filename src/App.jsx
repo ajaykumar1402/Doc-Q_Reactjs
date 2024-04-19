@@ -20,7 +20,7 @@ import Services from "./components/LandingPages/Services/Services";
 import FindDoctor from "./components/findDoctor";
 
 function App() {
-  const [isAdmin, setIsAdmin] = useState(!true);
+  const [isAdmin, setIsAdmin] = useState(true);
 
   return (
     <>
@@ -52,8 +52,8 @@ function App() {
               <Route path="/" element={<Navigate to="/dashboard" />} />
               <Route path="/schedule" element={<Schedule />} />
               <Route path="/tasks" element={<Task />} />
-              <Route path="/patients" element={<PatientsList />} />
-              <Route path="/add-patients" element={<AddPatients />} />
+              {/* <Route path="/patients" element={<PatientsList />} /> */}
+              {/* <Route path="/add-patients" element={<AddPatients />} /> */}
               <Route path="/messages" element={<Messages />} />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/settings" element={<Setting />} />
