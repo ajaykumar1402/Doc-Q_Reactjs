@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
-
 import Header from "./components/Common/HeaderDashboard/Header";
 import Task from "./components/DashboardPages/Task/Task";
 import Dashboard from "./components/DashboardPages/Desktop14/Dashboard/Dashboard";
 import Doctorprofile from "./components/LandingPages/Doctorprofile/Doctorprofile";
 import Home from "./Pages/Home/Home";
+import Verification from "./Pages/verification/Verification";
 import Analytics from "./components/DashboardPages/Analytics/Analytics";
 import Setting from "./components/DashboardPages/Setting/Settings";
 import Support from "./components/DashboardPages/Support/Support";
@@ -15,12 +15,13 @@ import Footer from "./components/Common/Footer";
 import Messages from "./components/DashboardPages/Messages/Messages";
 import Patients from "./components/DashboardPages/Patients/Patients";
 import FindADoctor from "./components/LandingPages/Find_a_doctors_page/data/FindADoctor";
+import AddPatients from "./components/DashboardPages/AddPatients/AddPatients"
 import Navbar from "./components/Common/Navbar/Navbar";
 import Services from "./components/LandingPages/Services/Services";
 import FindDoctor from "./components/findDoctor";
 
 function App() {
-  const [isAdmin, setIsAdmin] = useState(!true);
+  const [isAdmin, setIsAdmin] = useState(true);
 
   return (
     <>
@@ -52,7 +53,7 @@ function App() {
               <Route path="/" element={<Navigate to="/dashboard" />} />
               <Route path="/schedule" element={<Schedule />} />
               <Route path="/tasks" element={<Task />} />
-              <Route path="/patients" element={<PatientsList />} />
+              <Route path="/patients" element={<Patients />} />
               <Route path="/add-patients" element={<AddPatients />} />
               <Route path="/messages" element={<Messages />} />
               <Route path="/analytics" element={<Analytics />} />

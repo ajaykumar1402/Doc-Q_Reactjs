@@ -45,7 +45,7 @@ const Home = () => {
             hassle-free experience."
           </p>
           {/* <p id="updatedPara">Break free from waiting for doctor appointments! Prioritizing your time with swift consultations,  surgeries, and rapid medical services for a  healthier, hassle-free experience."</p> */}
-          <button id="mybtn">Book Appointment</button>
+          <button id="mybtn" className='rounded-full'>Book Appointment</button>
         </div>
         <div className="middleDiv">
           <img id="docImage1" src={image22} width="100%" />
@@ -107,7 +107,9 @@ const Home = () => {
       </div>
 
       {/* *****************ServicesSection Section Part 3**************** */}
+      <div className='flex justify-center items-center'>
       <Services />
+      </div>
       <TopSpecialist />
       <Testimonials />
     </div>
