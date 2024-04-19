@@ -3,6 +3,7 @@
   max-width: 1728px;
   color: #e9f7f8;
   width: 100%;
+  border-radius: 20px;
 }
 .doc-main-container {
   padding: 3rem;
@@ -31,26 +32,17 @@
   padding: 15px;
   border: 1px solid rgba(233, 247, 248, 0.5);
   border-radius: 5px;
+  transition: transform 0.3s ease;
+
 }
 
 .doc-card:hover {
-  max-width: 367px;
-  height: 360px;
-  margin-top: 40px;
-  padding: 15px;
-
-  font-size: 24px;
-  transform: scaleX(1.04) scaleY(1.06); /* Adjusted */
-  transform-origin: top left; /* Added */
-  z-index: 4;
-
-  transition: all ease-in-out 0.2s;
+  transform: translate(-20px, -40px);
 }
-.doc-card:hover .card-img > img {
-  width: 80px;
-  transition: all ease-in-out 0.2s;
-  height: 80px;
-}
+
+
+
+
 .doc-card:hover .card-title {
   transition: all ease-in-out 0.2s;
   padding-top: 20px;

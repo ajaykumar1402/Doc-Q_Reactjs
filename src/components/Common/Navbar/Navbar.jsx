@@ -22,12 +22,13 @@ const Navbar = () => {
                         <Link
                             to={link.path}
                             key={i}
-                            className={`text-lg font-bold cursor-pointer ${location.pathname === link.path
+                            className={`text-lg font-bold cursor-pointer relative ${location.pathname === link.path
                                     ? "text-blue-500"
-                                    : "text-[#888787]"
+                                    : "text-[#888787] "
                                 }`}
                         >
                             {link.title}
+                           { location.pathname === link.path && (<span className="border-2 border-blue-800 absolute -bottom-[2px] w-[80%] rounded-full right-2"></span>)}
                         </Link>
                     ))}
                 </div>
@@ -38,7 +39,7 @@ const Navbar = () => {
                             key={i}
                             className={`text-lg font-bold  ${location.pathname === link.path
                                     ? "text-blue-500"
-                                    : "text-[#888787] line-through"
+                                    : "text-[#888787]"
                                 }`}
                         >
                             {link.title}

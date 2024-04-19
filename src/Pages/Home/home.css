@@ -44,8 +44,10 @@
   height: 50px;
   background-color: #5284b5;
   color: aliceblue;
+  font-size: 1.2rem;
+  font-weight: 700;
   border: none;
-  box-shadow: 2px 2px 3px black, -2px -2px 3px black;
+
 }
 
 .middleDiv {
@@ -98,8 +100,9 @@
   justify-content: space-evenly;
   color: aliceblue;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 30px;
   margin: 2% 3%;
+
 }
 .commonBoldpara {
   font-weight: bold;
@@ -202,19 +205,25 @@
   padding: 0 2%;
   top: 10px;
   border-radius: 5px;
-  .mySpan {
-    font-size: 20px;
-  }
+ 
 }
+
+.mySpan {
+  font-size: 20px;
+}
+
+
 .bdiv img {
   padding-top: 8px;
 }
+
 
 .bdiv p {
   padding-top: 15px;
   text-align: left;
   color: #e9f7f8d9;
 }
+
 .topDiv #myPara {
   font-size: 20px;
   color: #e9f7f8;
@@ -564,6 +573,10 @@
     height: 50px;
     width: 280px;
     padding: 20px 40px;
+ 
+    border: none;
+    box-shadow: none;
+    border: 1px solid;
   }
 
   .middleDiv {
@@ -686,6 +699,7 @@
     height: 50px;
     width: 220px;
     padding: 20px 40px;
+    
   }
 
   .middleDiv {
