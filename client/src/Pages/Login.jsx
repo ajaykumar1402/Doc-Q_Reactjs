@@ -1,7 +1,7 @@
 import man from "../assets/images/doctor_imgs/login_image_1.svg";
 import woman from "../assets/images/doctor_imgs/login_image_2.svg";
 
-const LoginRegister = () => {
+const Login = () => {
   return (
     <div className="bg-[#063360] flex flex-col m-auto items-center justify-center h-[800px]">
       <div className="shadow-chart bg-white rounded-lg h-250 w-3/4 sm:w-1/2 md:w-1/2 lg:w-1/2 flex justify-center flex-col py-4 z-10">
@@ -82,4 +82,4 @@ const LoginRegister = () => {
   );
 };
 
-export default LoginRegister;
+export default Login;
