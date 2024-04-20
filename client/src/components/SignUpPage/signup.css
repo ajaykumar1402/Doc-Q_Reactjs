@@ -1,0 +1,131 @@
+* {
+  font-family: "Mukta", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.signup-container {
+  height: 64vh;
+  width: 40vw;
+  border-radius: 20px;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+  /* background-color: #063360; */
+}
+
+.signup-input input {
+  border-bottom: 2px solid lightgray;
+  font-size: 22px;
+}
+
+.signup-input label {
+  font-size: 17px;
+  color: gray;
+}
+
+.signup-input {
+  line-height: 35px;
+}
+
+.signup-input input::placeholder {
+  color: black;
+}
+
+.signup-input input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid lightgray;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  margin-top: 28px;
+  border-radius: 12px;
+  color: white;
+}
+@media (max-width: 1100px) {
+  body {
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+  }
+  #sign-up-right-img {
+    position: absolute;
+    top: 35%;
+    right: 2%;
+    width: 32%;
+    height: 50%;
+  }
+  #signup-container {
+    width: 49vw;
+    padding: 20px 40px;
+  }
+  #signup-container {
+    width: 49vw;
+    height: 70vh;
+    padding: 20px 40px;
+  }
+  .signup-input {
+    line-height: 33px;
+  }
+  #lady-img {
+    bottom: 0px;
+  }
+}
+@media (max-width: 834px) {
+  .main-container {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  #sign-up-right-img {
+    display: none;
+  }
+  #signup-container {
+    width: 65vw;
+    height: 70vh;
+    padding: 20px 40px;
+    margin-top: 15%;
+    margin-right: 0;
+    /* margin-left: 20%; */
+    /* margin-left: 25%; */
+  }
+  #lady-img {
+    width: 60%;
+    height: 65%;
+    bottom: -12%;
+  }
+}
+@media (max-width: 430px) {
+  #lady-img {
+    display: none;
+  }
+  #signup-container {
+    width: 94vw;
+    height: 70vh;
+    padding: 20px 16px;
+    margin-top: 28%;
+    margin-right: 0px;
+    margin-left: 5%;
+    /* margin-left: 25%; */
+  }
+  #h2-text1 {
+    font-size: 19px;
+    margin-right: 0rem;
+  }
+  #h2-text2 {
+    /* margin-top: 5px; */
+    font-size: 19px;
+    margin-right: 0rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  #signup-container {
+    height: 75vh;
+  }
+}

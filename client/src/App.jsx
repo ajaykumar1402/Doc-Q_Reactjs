@@ -17,7 +17,8 @@ import FindADoctor from "./components/LandingPages/Find_a_doctors_page/data/Find
 import Navbar from "./components/Common/Navbar/Navbar";
 import FindDoctor from "./components/findDoctor";
 import AddPatients from "./components/DashboardPages/AddPatients/AddPatients"
-import PatientsList from "./components/DashboardPages/PatientsList/PatientsList"
+import PatientsList from "./components/DashboardPages/PatientsList/PatientsList";
+// import SignUp from "./components/SignUpPage";
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(!true);
@@ -36,6 +37,7 @@ function App() {
             {/* The below one is for nav link */}
             <Route path="/find-doctor" element={<FindDoctor />} />
             <Route path="/doctors-profile" element={<Doctorprofile />} />
+            {/* <Route path="/signup" element={<SignUp />} /> */}
           </Routes>
           <Footer />
         </>
