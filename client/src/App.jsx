@@ -19,6 +19,7 @@ import FindDoctor from "./components/findDoctor";
 import AddPatients from "./components/DashboardPages/AddPatients/AddPatients"
 import PatientsList from "./components/DashboardPages/PatientsList/PatientsList";
 // import SignUp from "./components/SignUpPage";
+// import LoginRegister from "./Pages/LoginRegister";
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(!true);
@@ -38,6 +39,8 @@ function App() {
             <Route path="/find-doctor" element={<FindDoctor />} />
             <Route path="/doctors-profile" element={<Doctorprofile />} />
             {/* <Route path="/signup" element={<SignUp />} /> */}
+            {/* <Route path="/login" element={<LoginRegister />} /> */}
+
           </Routes>
           <Footer />
         </>
