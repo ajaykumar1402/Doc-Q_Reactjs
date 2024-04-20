@@ -18,6 +18,7 @@ import Navbar from "./components/Common/Navbar/Navbar";
 import FindDoctor from "./components/findDoctor";
 import AddPatients from "./components/DashboardPages/AddPatients/AddPatients"
 import PatientsList from "./components/DashboardPages/PatientsList/PatientsList";
+import Services from "./components/LandingPages/Ourservices/Services";
 // import SignUp from "./components/SignUpPage";
 // import Login from "./Pages/Login";
 
@@ -34,7 +35,7 @@ function App() {
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/find-a-doctor" element={<FindADoctor />} />
-            <Route path="/our-services" element={<h1>Service page Here</h1>} />
+            <Route path="/our-services" element={<Services/>} />
             {/* The below one is for nav link */}
             <Route path="/find-doctor" element={<FindDoctor />} />
             <Route path="/doctors-profile" element={<Doctorprofile />} />
