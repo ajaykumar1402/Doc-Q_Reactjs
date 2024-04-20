@@ -1,10 +1,19 @@
-import React from "react";
-import{ useState } from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
 import logo1 from "../../assets/verification_images/verification image.png";
 import logo2 from "../../assets/verification_images/verification image (1).png";
+import { useLocation } from "react-router-dom";
+import { obscureEmail } from "../../utils/function";
 
 function Verification() {
   const [otp, setOtp] = useState("");
+  const [email, setEmail] = useState("");
+  const data = useLocation();
+  
+  useEffect(() => {
+    const secureEmail = obscureEmail(data.state);
+    setEmail(secureEmail);
+  }, []);
 
   const handleChange = (e) => {
     const input = e.target.value;
@@ -12,6 +21,7 @@ function Verification() {
       setOtp(input);
     }
   };
+
   return (
     <div className=" h-screen w-full">
       <div className=" h-4/6 flex flex-col items-center pt-24 sm:justify-center">
@@ -21,20 +31,19 @@ function Verification() {
         <div className="flex gap-0 sm:gap-1  mb-6">
           <p className="text-[#4F4F4F] text-xs sm:text-xl text-center font-medium">
             A 6 - digit code has been sent to your email at
-            <span>jo*****2004@gmail.com</span>
+            <span> {email} </span>
           </p>
           <button className="text-[#0000AC] text-xs sm:text-xl mb-3 mr-1 sm:m-0 font-bold">
             Change
           </button>
         </div>
         <input
-  className="border-b-2 border-[#000000] focus:outline-none h-12 w-20 pl-1 text-xl text-[#000000] font-medium my-6"
-  type="text"
-  name="otp"
-  value={otp}
-  onChange={handleChange}
-/>
-
+          className="border-b-2 border-[#000000] focus:outline-none h-12 w-20 pl-1 text-xl text-[#000000] font-medium my-6"
+          type="text"
+          name="otp"
+          value={otp}
+          onChange={handleChange}
+        />
 
         <p className="text-[#000000] text-md font-medium mb-6">
           <span>0 : 32</span> secs remaining

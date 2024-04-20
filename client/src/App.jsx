@@ -18,6 +18,10 @@ import Navbar from "./components/Common/Navbar/Navbar";
 import FindDoctor from "./components/findDoctor";
 import AddPatients from "./components/DashboardPages/AddPatients/AddPatients"
 import PatientsList from "./components/DashboardPages/PatientsList/PatientsList"
+import Login from "./Pages/Registeration/Login";
+import Register from "./Pages/Registeration/Register";
+import RegisterPatinet from "./Pages/Registeration/RegisterPatinet";
+import RegisterDoctor from "./Pages/Registeration/RegisterDoctor";
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(!true);
@@ -36,7 +40,12 @@ function App() {
             {/* The below one is for nav link */}
             <Route path="/find-doctor" element={<FindDoctor />} />
             <Route path="/doctors-profile" element={<Doctorprofile />} />
-          </Routes>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/register" element={<Register/>}/>
+            <Route path="/register-patient" element={<RegisterPatinet/>}/>
+            <Route path="/register-doctor" element={<RegisterDoctor/>}/>
+            <Route path="/verify-email" element={<Verification/>}/>
+           </Routes>
           <Footer />
         </>
       ) : (
